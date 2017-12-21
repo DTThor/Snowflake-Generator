@@ -1,4 +1,8 @@
 /* ============== LAYOUT ===================== */
+body {
+  background: linear-gradient(90deg, #001848,#301860);
+}
+
 h1 {
   font-size: 60px
 }
@@ -16,7 +20,6 @@ h1 {
   order: 2;
   min-height: 550px;
   width: 550px;
-  background: linear-gradient(90deg, #001848,#301860);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,4 +73,26 @@ h1 {
 	}
 	.stroke-4{
 		transform: rotate(-45deg);
+}
+
+@-webkit-keyframes rotating
+	{
+	from
+		{
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	to
+		{
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		}
+	}
+
+.rotating {
+  -webkit-animation: rotating 3s linear infinite;
+	-moz-animation: rotating 3s linear infinite;
+	-ms-animation: rotating 3s linear infinite;
+	-o-animation: rotating 3s linear infinite;
+	animation: rotating 3s linear infinite;
 }
