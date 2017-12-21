@@ -27,6 +27,10 @@ h1 {
   order: 1;
   min-height: 550px;
   flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* ============== SNOWFLAKE =================== */
