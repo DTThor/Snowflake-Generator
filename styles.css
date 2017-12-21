@@ -4,7 +4,14 @@ body {
 }
 
 h1 {
-  font-size: 60px
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  text-shadow:
+   -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
 }
 
 .layout {
@@ -27,6 +34,8 @@ h1 {
 }
 
 .formContainer {
+  background-color: white;
+  box-shadow:
   order: 1;
   min-height: 550px;
   flex: 0 0 40%;
