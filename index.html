@@ -12,33 +12,31 @@
   <body>
     <h1>Snowflake Generator</h1>
     <div class = "layout">
-    <div class = "snowFlakeContainer">
+      <div class = "formContainer">
+        <h2>Make Your Snowflake!</h2>
+        <form action="" name="snowflake">
+          <select onchange="bgChange()" name="background-color" id="background-color" placeholder="Background Color">
+            <option value="navy">Navy</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+          </select>
+
+          <select onchange="ltChange()" name="line-thickness" id="line-thickness" placeholder="Line thickness">
+            <option value="5px">5px</option>
+            <option value="10px">10px</option>
+            <option value="20px">20px</option>
+          </select>
+
+          <button type="submit">Create Snowflake</button>
+        </form>
+    </div>
+      <div class = "snowFlakeContainer">
         <div class="stroke stroke-1"></div>
         <div class="stroke stroke-2"></div>
         <div class="stroke stroke-3"></div>
         <div class="stroke stroke-4"></div>
-    </div>
+      </div>
   </div>
-    <div class = "formContainer">
-      <h2>Make Your Snowflake!</h2>
-      <form action="" name="snowflake">
-
-        <select onchange="bgChange()" class="target" name="background-color" id="background-color" placeholder="Background Color">
-          <option value="navy" selected="selected">Navy</option>
-          <option value="red">Red</option>
-          <option value="green">Green</option>
-          <option value="black">Black</option>
-        </select>
-
-        <select onchange="ltChange()" class="target" name="line-thickness" id="line-thickness" placeholder="Line thickness">
-          <option value="5px" selected="selected">5px</option>
-          <option value="10px">10px</option>
-          <option value="20px">20px</option>
-        </select>
-
-      </form>
-
-    </div>
-    <div class = "snowFlakeContainer"></div>
   </body>
 </html>
